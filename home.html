@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Electronic Library System</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    h1 {
+        color: red; 
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    
+
+    .image-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        width: 80%;
+        margin: 0 auto;
+        flex-wrap: wrap; 
+    }
+
+    .image-container h2 {
+        text-align: center;
+        margin: 10px 0;
+        flex: 1 1 200px;
+        max-width: 250px; 
+        }
+    
+    .image-container img {
+        display: block;
+        margin: 0 auto;
+        width: 150px; 
+        height: 100px; 
+        object-fit: cover; 
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #ccc;
+    }
+</style>
+</head>
+<body>
+    <h1>Welcome to the Electronic Library System</h1>
+    
+    
+       Click here to register....<a href="RegistrationForm.html"><font color="green">REGISTER</font></a><br><br>
+       Click here to Login....<a href="LoginForm.html"><font color="green">LOGIN</font></a>
+    
+
+    <div class="image-container">
+        <h2><a href="SearchBooks.html"><img src="./images/Search.jpeg" alt="Search Books"><br>Search Books</a></h2>
+        <h2><a href="InsertBooks.html"><img src="./images/insertbooks.jpeg" alt="Insert Books"><br>Insert Books</a></h2>
+        <h2><a href="Borrow.html"><img src="./images/Borrowbooks.jpeg" alt="Borrow Books"><br>Borrow Books</a></h2>
+        <h2><a href="UpdateBooks.html"><img src="./images/updatebooks.jpg" alt="UpdateBooks"><br>Update Books</a></h2>
+        <h2><a href="Return.html"><img src="./images/returning books.jpeg" alt="Return Books"><br>Return Books</a></h2>
+    </div>
+Delete Books.......<a href="Delete.html"><font color="red">DELETE</font></a>
+    
+    <footer>
+        <p>&copy; 2024 Electronic Library System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

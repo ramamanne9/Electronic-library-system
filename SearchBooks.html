@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Search for Books</h1>
+    <form action="/SearchBooksServlet" method="post">
+        <table>
+            <tr>
+                <td>BookId:</td>
+                <td><input type="number" placeholder="Enter ID" name="id"></td>
+            </tr>
+            <tr>
+                <td>Title:</td>
+                <td><input type="text" placeholder="Enter Title" name="title"></td>
+            </tr>
+            <tr>
+                <td>Author:</td>
+                <td><input type="text" placeholder="Enter Author" name="author"></td>
+            </tr>
+            <tr>
+                <td>ISBN:</td>
+                <td><input type="text" placeholder="Enter ISBN" name="isbn"></td>
+            </tr>
+            <tr>
+                <td>Category:</td>
+                <td><input type="text" placeholder="Enter Category" name="category"></td>
+            </tr>
+            <tr>
+                <td>Description:</td>
+                <td><input type="text" placeholder="Enter Description" name="description"></td>
+            </tr>
+            <tr>
+                <td>Total Copies:</td>
+                <td><input type="number" placeholder="Enter Total Copies" name="totalCopies"></td>
+            </tr>
+            <tr>
+                <td>Available Copies:</td>
+                <td><input type="number" placeholder="Enter Available Copies" name="availableCopies"></td>
+            </tr>
+            <tr>
+                <td>Is Borrowed:</td>
+                <td><input type="number" placeholder="Enter Is Borrowed" name="is_borrowed"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+            <tr>
+                <td><a href="allbooks">View All Books</a></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html> 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Borrow Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Borrow Book</h2>
+    <form action="borrow" method="post">
+        <label for="borrowid">Book ID:</label><br>
+        <input type="number" id="borrowid" name="borrowid" required><br><br>
+
+        <label for="userid">Your Name:</label><br>
+        <input type="text" id="userid" name="userid" required><br><br>
+
+        <label for="bookid">Book ID:</label><br>
+        <input type="number" id="bookid" name="bookid" required><br><br>
+
+        <label for="borrowDate">Borrow Date:</label><br>
+        <input type="date" id="borrowDate" name="bdate" required><br><br>
+
+        <label for="returnDate">Return Date:</label><br>
+        <input type="date" id="returnDate" name="rdate" required><br><br>
+
+        <input type="submit" value="Borrow Book">
+    </form>
+</body>
+</html>
